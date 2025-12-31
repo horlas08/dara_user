@@ -21,7 +21,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.dara.user"
+        applicationId = "com.qunzo.user"
         minSdk = 24
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
