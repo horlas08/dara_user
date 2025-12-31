@@ -1,6 +1,6 @@
 class ApiPath {
   // Base Endpoints
-  static const String baseUrl = 'https://qunzo-lite.tdevs.co/api';
+  static const String baseUrl = 'https://darapay.io/api';
 
   // Common Endpoints
   static const String countriesEndpoint = '/get-countries';
