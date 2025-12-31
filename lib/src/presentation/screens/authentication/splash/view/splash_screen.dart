@@ -169,7 +169,7 @@ class _SplashScreenState extends State<SplashScreen>
                             child: SlideTransition(
                               position: _textSlideAnimation,
                               child: Text(
-                                "unzo",
+                                "ara",
                                 style: TextStyle(
                                   fontSize: 65.sp,
                                   fontWeight: FontWeight.w900,
