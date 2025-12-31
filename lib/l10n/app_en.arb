@@ -21,8 +21,8 @@
   "commonDropdownOther": "Other",
 
   "comment_welcome": "==== Welcome Screen ====",
-  "welcomeTitle": "Welcome to Qunzo",
-  "welcomeDescription": "Qunzo Empowers you with Multi-Wallet Management, Instant Swaps, and Secure Transactions.",
+  "welcomeTitle": "Welcome to Dara",
+  "welcomeDescription": "Dara Empowers you with Multi-Wallet Management, Instant Swaps, and Secure Transactions.",
   "welcomeSignIn": "Sign In",
   "welcomeCreateAccount": "Create Account",
 
@@ -155,7 +155,7 @@
 
   "comment_sign_up_status_screen": "==== Sign Up Status Screen ====",
   "signUpStatusTitle": "Your Current Status",
-  "signUpStatusSubtitle": "A Quick 4-Step Process to Keep Your Qunzo Account Secure",
+  "signUpStatusSubtitle": "A Quick 4-Step Process to Keep Your Dara Account Secure",
   "signUpStatusStep": "Step",
   "signUpStatusEmailVerification": "Email Verification",
   "signUpStatusSetupPassword": "Setup Password",

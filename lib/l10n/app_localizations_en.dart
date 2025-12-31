@@ -60,11 +60,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get comment_welcome => '==== Welcome Screen ====';
 
   @override
-  String get welcomeTitle => 'Welcome to Qunzo';
+  String get welcomeTitle => 'Welcome to Dara';
 
   @override
   String get welcomeDescription =>
-      'Qunzo Empowers you with Multi-Wallet Management, Instant Swaps, and Secure Transactions.';
+      'Dara Empowers you with Multi-Wallet Management, Instant Swaps, and Secure Transactions.';
 
   @override
   String get welcomeSignIn => 'Sign In';
@@ -440,7 +440,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get signUpStatusSubtitle =>
-      'A Quick 4-Step Process to Keep Your Qunzo Account Secure';
+      'A Quick 4-Step Process to Keep Your Dara Account Secure';
 
   @override
   String get signUpStatusStep => 'Step';
