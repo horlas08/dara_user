@@ -151,39 +151,39 @@ class _SplashScreenState extends State<SplashScreen>
                   ),
                 ),
               ),
-              // Container(
-              //   alignment: Alignment.center,
-              //   child: FadeTransition(
-              //     opacity: _fadeAnimation,
-              //     child: SlideTransition(
-              //       position: _slideAnimation,
-              //       child: ScaleTransition(
-              //         scale: _scaleAnimation,
-              //         child: Row(
-              //           mainAxisSize: MainAxisSize.min,
-              //           children: [
-              //             Image.asset(PngAssets.appScreenIcon, height: 55.h),
-              //             const SizedBox(width: 5),
-              //             FadeTransition(
-              //               opacity: _textFadeAnimation,
-              //               child: SlideTransition(
-              //                 position: _textSlideAnimation,
-              //                 child: Text(
-              //                   "ara",
-              //                   style: TextStyle(
-              //                     fontSize: 65.sp,
-              //                     fontWeight: FontWeight.w900,
-              //                     color: AppColors.lightTextPrimary,
-              //                   ),
-              //                 ),
-              //               ),
-              //             ),
-              //           ],
-              //         ),
-              //       ),
-              //     ),
-              //   ),
-              // ),
+              Container(
+                alignment: Alignment.center,
+                child: FadeTransition(
+                  opacity: _fadeAnimation,
+                  child: SlideTransition(
+                    position: _slideAnimation,
+                    child: ScaleTransition(
+                      scale: _scaleAnimation,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Image.asset(PngAssets.appScreenIcon, height: 55.h),
+                          // const SizedBox(width: 5),
+                          // FadeTransition(
+                          //   opacity: _textFadeAnimation,
+                          //   child: SlideTransition(
+                          //     position: _textSlideAnimation,
+                          //     child: Text(
+                          //       "ara",
+                          //       style: TextStyle(
+                          //         fontSize: 65.sp,
+                          //         fontWeight: FontWeight.w900,
+                          //         color: AppColors.lightTextPrimary,
+                          //       ),
+                          //     ),
+                          //   ),
+                          // ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
           Obx(() {
