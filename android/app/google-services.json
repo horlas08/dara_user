@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "279734428004",
-    "project_id": "qunzo-b2252",
-    "storage_bucket": "qunzo-b2252.firebasestorage.app"
+    "project_number": "664541219186",
+    "project_id": "dara-bf39c",
+    "storage_bucket": "dara-bf39c.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:279734428004:android:ccd69b013d25e835949a71",
+        "mobilesdk_app_id": "1:664541219186:android:3e296bc7ac5651191675eb",
         "android_client_info": {
-          "package_name": "com.qunzo.user"
+          "package_name": "com.dara.user"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBDecN3TGV6vDJPRbswbOKvrJ9dt7VkZUE"
+          "current_key": "AIzaSyACJ_7LK9XIGiFNdEtsKMBAFky1vqS4t7Y"
         }
       ],
       "services": {

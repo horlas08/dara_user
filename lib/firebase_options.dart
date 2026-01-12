@@ -38,20 +38,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBDecN3TGV6vDJPRbswbOKvrJ9dt7VkZUE',
-    appId: '1:279734428004:android:ccd69b013d25e835949a71',
-    messagingSenderId: '279734428004',
-    projectId: 'qunzo-b2252',
-    storageBucket: 'qunzo-b2252.firebasestorage.app',
+    apiKey: 'AIzaSyACJ_7LK9XIGiFNdEtsKMBAFky1vqS4t7Y',
+    appId: '1:664541219186:android:3e296bc7ac5651191675eb',
+    messagingSenderId: '664541219186',
+    projectId: 'dara-bf39c',
+    storageBucket: 'dara-bf39c.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDgFfu2VI5eHHsXsy_FlI0bXHy3-hzp6uo',
-    appId: '1:279734428004:ios:f06064424e537a53949a71',
-    messagingSenderId: '279734428004',
-    projectId: 'qunzo-b2252',
-    storageBucket: 'qunzo-b2252.firebasestorage.app',
-    iosBundleId: 'com.qunzo.user',
+    apiKey: 'AIzaSyCqL3ZkQx4cqLr4KB_XDyJE1feKAZfRnNs',
+    appId: '1:664541219186:ios:d966fba2382fc3b41675eb',
+    messagingSenderId: '664541219186',
+    projectId: 'dara-bf39c',
+    storageBucket: 'dara-bf39c.firebasestorage.app',
+    iosBundleId: 'com.dara.user',
   );
 
 }
