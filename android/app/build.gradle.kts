@@ -1,3 +1,4 @@
+import java.util.Properties
 plugins {
     id("com.android.application")
     id("com.google.gms.google-services")
@@ -36,14 +37,19 @@ android {
                 keyAlias = System.getenv()["CM_KEY_ALIAS"]
                 keyPassword = System.getenv()["CM_KEY_PASSWORD"]
             } else {
-                val keystoreFile = rootProject.file("android/app-release-key.jks")
-                val keystoreProperties = java.util.Properties()
-                keystoreProperties.load(rootProject.file("android/key.properties").inputStream())
+                val keystoreProperties = Properties()
+                val keyPropertiesFile = rootProject.file("android/key.properties")
 
+                if (keyPropertiesFile.exists()) {
+                    keystoreProperties.load(keyPropertiesFile.inputStream())
+                } else {
+                    throw GradleException("key.properties not found")
+                }
+
+                storeFile = rootProject.file("android/app-release-key.jks")
+                storePassword = keystoreProperties.getProperty("storePassword")
                 keyAlias = keystoreProperties.getProperty("keyAlias")
                 keyPassword = keystoreProperties.getProperty("keyPassword")
-                storeFile = keystoreFile
-                storePassword = keystoreProperties.getProperty("storePassword")
             }
 
         }
