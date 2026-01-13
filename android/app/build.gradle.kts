@@ -30,14 +30,22 @@ android {
 
     signingConfigs {
         create("release") {
-            val keystoreFile = rootProject.file("android/app-release-key.jks")
-            val keystoreProperties = java.util.Properties()
-            keystoreProperties.load(rootProject.file("android/key.properties").inputStream())
-            
-            keyAlias = keystoreProperties.getProperty("keyAlias")
-            keyPassword = keystoreProperties.getProperty("keyPassword")
-            storeFile = keystoreFile
-            storePassword = keystoreProperties.getProperty("storePassword")
+            if (System.getenv()["CI"].toBoolean()) { // CI=true is exported by Codemagic
+                storeFile = file(System.getenv()["CM_KEYSTORE_PATH"])
+                storePassword = System.getenv()["CM_KEYSTORE_PASSWORD"]
+                keyAlias = System.getenv()["CM_KEY_ALIAS"]
+                keyPassword = System.getenv()["CM_KEY_PASSWORD"]
+            } else {
+                val keystoreFile = rootProject.file("android/app-release-key.jks")
+                val keystoreProperties = java.util.Properties()
+                keystoreProperties.load(rootProject.file("android/key.properties").inputStream())
+
+                keyAlias = keystoreProperties.getProperty("keyAlias")
+                keyPassword = keystoreProperties.getProperty("keyPassword")
+                storeFile = keystoreFile
+                storePassword = keystoreProperties.getProperty("storePassword")
+            }
+
         }
     }
 
